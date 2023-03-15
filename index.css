@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    color: #FFFFFF;
+    background: linear-gradient(#132D46,#191E29) ;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* Header e Menu de navegação*/
+header{
+    font-size: 20px;
+    height: 56px;
+    background-color: #191E29;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-option{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav-option a{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.nav-option a:hover{
+    color: #01C38D;
+    border-bottom: 1px solid #01C38D;
+}
+
+.menu{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar-menu{
+    display: flex;
+    height: 3px;
+    width: 40px;
+    background-color: #FFFFFF;
+}
+
+.info{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    background-color: #191E29;
+    width: 200px;
+    min-height: 100px;
+    gap: 6px;
+}
+
+.info a{
+    height: 47px;
+}
+
+
+/*Corpo Principal*/
+
+.m-lf{
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+    height: calc(100vh - 56px);
+}
+
+.m-lf h1{
+    text-align: justify;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: normal;
+    margin: auto;
+}
+
+.m-rgt{
+    max-width: 636px;
+    max-height: 392px;
+    margin: auto;
+}
+
+/*Outros Conteúdos*/
+.title,
+.tec-item--name,
+.tec-Info h1{
+    text-transform: uppercase;
+}
+
+.bar{
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: #FFF;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.pag-txt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.sbs{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.evo{
+    margin: 40px;
+}
+
+.evo img{
+    width: 750px;
+    height: 400px;
+}
+
+blockquote{
+    position: relative;
+    max-width: 270px;
+    font-size: 16px;
+    left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 56px;
+    background-color: #191E22;
+    margin-top: 20px;
+}
+
+.txt-img{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 600px;
+}
+.txt-img.rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.txt-img .evo img{
+    max-width: 550px;
+}
+
+.long{
+    position: relative;
+    max-width: 500px;
+    font-size: 18px;
+    left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*pag tec*/
+
+.tec-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.tec-item{
+    max-width: 380px;
+    background-color: #132D46;
+    box-shadow: 0px 0px 20px 2px black;
+    border-radius: 5px;
+}
+.tec-item:hover{
+    box-shadow: inset 0px 0px 20px 2px black;
+}
+
+.tec-item--img img{
+    display: flex;
+    margin: auto;
+    min-width: 370px;
+    max-width: 370px;
+    min-height: 200px;
+    max-height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.tec-item--desc, .tec-item--name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 5px;
+}
+
+.tec-item--desc.ct{
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 5px;
+}
+
+.tecWindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:#ffffff80;
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+
+.tecWindowBody {
+    width:900px;
+    background-color:#132D46;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    flex-direction: column;
+    margin:20px 0px;
+    align-items: center;
+}
+.tecInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+.tecInfo h1 {
+    margin-top: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.tecInfo .tecInfo--desc {
+    text-align: justify;
+    font-size: auto;
+    color:#999;
+    padding: 20px;
+}
+.tecBig--back {
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color:#000;
+}
+.tecBig img {
+    height:300px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.tecInfo--close{
+    width: 850px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #01C38D;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.tecInfo--close:hover{
+    color: #ff0000;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    min-height: 75vh;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: auto;
+    font-size: 20px;
+    text-align: justify;
+    gap: 10px;
+
+}
+
+.profile-info.bar{
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+.m-lf.profile{
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.m-rgt.profile img{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.social-medias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 950px;
+    }
+    .m-lf{
+        height: auto;
+    }
+    .m-lf h1{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .evo img{
+        max-width: 800px;
+    }
+    .sbs{
+        flex-direction: column;
+    }
+    .long{
+        left: 200px;
+    }
+    .tec-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tecWindowBody{
+        height: 480px;
+    }
+    .tecBig img{
+        height: 270px;
+    }
+    .tecInfo .tecInfo--desc{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 700px;
+    }
+    .nav-option{
+        font-size: 18px;
+        gap: 10px;
+    }
+    .m-lf{
+        flex-direction: column;
+        height: auto;
+    }
+    .m-lf h1{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .evo img{
+        max-width: 650px;
+    }
+    .sbs{
+        flex-direction: column;
+    }
+    .long{
+        left: 90px;
+    }
+    .txt-img, .txt-img.rev{
+        flex-direction: column;
+    }
+    .tec-area{
+        grid-template-columns: auto;
+    }
+    .tecWindowBody{
+        width: 700px;
+        height: 480px;
+    }
+    .tecInfo--close{
+        width: 650px;
+    }
+    .tecBig img{
+        height: 200px;
+    }
+    .tecInfo .tecInfo--desc{
+        padding: 0 20px;
+    }
+    .tec-item, .tec-item--img img{
+        max-width: 500px;
+    }
+    .pag-txt h3{
+        text-align: center;
+    }
+    .m-lf.profile{
+        margin: auto;
+    }
+    .pag-txt{
+        margin-top: 10px;
+        gap: 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        max-width: 340px;
+    }
+    .nav-option a{
+        display: none;
+    }
+    .info{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .m-lf{
+        flex-direction: column;
+        height: auto;
+        padding: 0 5px;
+    }
+    .m-lf h1{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .m-rgt img{
+        max-width: 350px;
+        max-height: 200px;
+    }
+    .title{
+        text-align: center;
+    }
+    .txt{
+        padding: 10px;
+    }
+    .evo{
+        margin: auto;
+        max-width: 320px;
+    }
+    .evo img, .txt-img .evo img{
+        max-width: 310px;
+        max-height: 200px;
+    }
+    blockquote{
+        left: 50px
+    }
+    .long{
+        font-size: 13px;
+        left: 0px;
+    }
+    .sbs{
+        flex-direction: column;
+    }
+    footer{
+        text-align: center;
+    }
+    .tec-area{
+        grid-template-columns: auto;
+    }
+    .tecWindowBody{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+    .tecInfo--close{
+        width: 90vw;
+        color: #ff0000;
+    }
+    .tecInfo h1{
+        text-align: center;
+        font-size: 22px;
+        margin-top: 0;
+    }
+    .tecBig img{
+        width: 370px;
+        height: 200px;
+    }
+    .tecInfo .tecInfo--desc{
+        padding: 0 20px;
+    }
+    .tec-item, .tec-item--img img{
+        max-width: 370px;
+    }
+    .summary_text{
+        word-break: break-all;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        min-height: 60vh;
+    }
+    .m-rgt.profile img{
+        max-width: 340px;
+        max-height: 340px;
+    }
+    .pag-txt{
+        margin-top: 0;
+    }
+}

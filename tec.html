@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>📜 TECNOLOGIAS</title>
+  </head>
+  <body>
+    <div class="models" style="display: none;">
+      <div class="tec-item">
+        <a href="">
+          <div class="tec-item--img">
+            <img src="" alt="">
+          </div>
+          <div class="tec-item--name">--</div>
+          <div class="tec-item--desc ct">--</div>
+        </a>
+      </div>
+      <div class="card-tec-item">
+          <div class="card-tec-item--img">
+            <img src="" alt="">
+          </div>
+          <div class="card-tec-item--name">--</div>
+          <div class="card-tec-item--desc">--</div>
+      </div>
+    </div>
+    <header>
+      <nav class="nav container">
+        <div class="logo">
+        <a href="index.html"><img src="Assets/Logo_inicial.svg" alt=""></a>
+        </div>
+        <div class="nav-option">
+          <a href="index.html">Home</a>
+          <a href="tec.html">Tecnologias</a>
+          <a href="profi-soc.html">Profissionais e Sociedade</a>
+          <a href="consid.html">Considerações</a>
+          <div onclick="menuOpen()" class="menu">
+            <span class="bar-menu"></span>
+            <span class="bar-menu"></span>
+            <span class="bar-menu"></span>
+            <!--Apenas um teste, existem outras formas de executar a ação a seguir-->
+            <div class="info">
+            <a href="bibli.html">Bibliográfia</a>
+            <a href="info.html">Sobre</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pag-txt">
+      <div class="title">
+        <h2>Tecnologias</h2>
+        <span class="bar"></span>
+      </div>
+      <div class="tec-area container"></div>
+    </main>
+    <div class="tecWindowArea">
+      <div class="tecWindowBody">
+          <div class="tecInfo--close" onclick="closeModal()">
+            <span class="material-symbols-outlined">
+              close
+              </span>Voltar</div>
+          <div class="tecBig">
+              <img src="" />
+          </div>
+          <div class="tecInfo">
+              <h1>--</h1>
+              <div class="tecInfo--desc">--</div>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="ftr container">
+        <p><span id="year"></span></p>
+      </div> 
+    </footer>
+  </body>
+  <script src="tec.js"></script>
+  <script src="script.js"></script>
+</html>
