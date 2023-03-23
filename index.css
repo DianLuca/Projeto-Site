@@ -57,6 +57,10 @@ nav{
     gap: 10px;
 }
 
+.menu-mobile{
+    display: none;
+}
+
 .bar-menu{
     display: flex;
     height: 3px;
@@ -220,7 +224,7 @@ footer{
     display: flex;
     margin: auto;
     min-width: 370px;
-    max-width: 370px;
+    width: 380px;
     min-height: 200px;
     max-height: 200px;
     border-top-right-radius: 5px;
@@ -235,7 +239,7 @@ footer{
     font-size: 18px;
     color: #FFFFFF;
     text-align: center;
-    margin: 5px;
+    margin: 5px 30px;
 }
 
 .tec-item--desc.ct{
@@ -243,7 +247,8 @@ footer{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0 5px;
+    margin: 0 10px;
+    margin-bottom: 5px;
 }
 
 .tecWindowArea {
@@ -283,8 +288,8 @@ footer{
 }
 .tecInfo .tecInfo--desc {
     text-align: justify;
-    font-size: auto;
-    color:#999;
+    font-size: 18px;
+    color:#FFFFFF;
     padding: 20px;
 }
 .tecBig--back {
@@ -357,14 +362,21 @@ footer{
     margin: 0;
 }
 
-.social-medias{
+#socialLinks{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    list-style: none;
     margin-top: 10px;
     gap: 5px;
 }
 
+.github{
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    gap: 10px;
+}
 /*Responsividade*/
 
 @media (max-width: 1024px){
@@ -398,6 +410,9 @@ footer{
     }
     .tecInfo .tecInfo--desc{
         padding: 0 20px;
+    }
+    .menu-mobile{
+        display: none;
     }
 }
 
@@ -457,6 +472,9 @@ footer{
     .pag-txt{
         margin-top: 10px;
         gap: 5px;
+    }
+    .menu-mobile{
+        display: none;
     }
 }
 
@@ -553,5 +571,22 @@ footer{
     }
     .pag-txt{
         margin-top: 0;
+    }
+
+    .menu-mobile{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 30px;
+        gap: 10px;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 20px;
+    }
+    
+    .menu-mobile a{
+        display: flex;
     }
 }
