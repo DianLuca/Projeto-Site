@@ -466,6 +466,10 @@ footer{
     .pag-txt h3{
         text-align: center;
     }
+    .profile{
+        flex-direction: column;
+        margin-top: 20px;
+    }
     .m-lf.profile{
         margin: auto;
     }
@@ -478,7 +482,7 @@ footer{
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 680px) {
     .container{
         max-width: 340px;
     }
@@ -564,6 +568,7 @@ footer{
         display: flex;
         flex-direction: column;
         min-height: 60vh;
+        margin-top: 20px;
     }
     .m-rgt.profile img{
         max-width: 340px;
